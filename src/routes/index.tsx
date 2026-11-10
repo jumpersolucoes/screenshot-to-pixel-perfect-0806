@@ -181,6 +181,7 @@ function Index() {
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             Entre no curso, assista às aulas e teste as receitas. Se em até 7 dias você achar que o Método Pizza e Renda não é para você, é só pedir o reembolso que devolvemos 100% do valor pago, sem perguntas e sem burocracia.
           </p>
+           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Não garantimos retornos financeiros por depender de diversos fatores.</p>
         </div>
       </section>
 
