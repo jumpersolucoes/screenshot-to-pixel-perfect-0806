@@ -164,6 +164,20 @@ function Index() {
           )}
         </div>
       </section>
+
+      {/* 6. Garantia */}
+      <section className="bg-cream px-5 py-20">
+        <div className="mx-auto max-w-3xl rounded-3xl border-4 border-gold bg-card p-8 shadow-[var(--shadow-warm)] md:p-12">
+          <div className="flex items-center gap-4">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-gold font-display text-2xl font-bold text-espresso">7</span>
+            <h2 className="text-2xl font-bold text-espresso md:text-4xl">Garantia incondicional de 7 dias</h2>
+          </div>
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+            Entre no curso, assista às aulas e teste as receitas. Se em até 7 dias você achar que o Método Pizza e Renda não é para você, é só pedir o reembolso que devolvemos 100% do valor pago, sem perguntas e sem burocracia.
+          </p>
+        </div>
+      </section>
+
       <footer className="px-5 py-8 text-center text-sm text-muted-foreground"><p>© Método Pizza e Renda</p><p className="mt-2">Contato: <a className="font-semibold underline" href="mailto:pizzaerenda@gmail.com">pizzaerenda@gmail.com</a></p><p className="mt-2 text-xs">Não garantimos o resultado, por depender de múltiplos fatores.</p></footer>
     </main>
   );
