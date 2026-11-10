@@ -31,3 +31,4 @@ use the editor.
 
 ## Project rules
 - Offer price and checkout URL live in src/config/offer.ts; empty values hide the price and disable enrollment so unconfirmed offers never show.
+- Keep FAQs in a dedicated section using the shared Radix accordion and offer configuration, so keyboard behavior and enrollment destinations stay consistent.

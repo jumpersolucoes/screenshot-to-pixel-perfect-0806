@@ -6,6 +6,7 @@ const phoneAd = phoneAdAsset.url;
 import video from "@/assets/apresentacao.mp4.asset.json";
 import poster from "@/assets/apresentacao-capa.jpg.asset.json";
 import { offer } from "@/config/offer";
+import { FaqSection } from "@/components/faq-section";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -147,6 +148,8 @@ function Index() {
           </div>
         </div>
       </section>
+
+      <FaqSection />
 
       {/* 5. Matrícula */}
       <section className="bg-espresso px-5 py-20 text-center text-cream">
