@@ -47,7 +47,7 @@ function Index() {
         <div>
           <img src={logo.url} alt="Método Pizza e Renda" width={140} height={140} className="mb-6 h-28 w-28 rounded-2xl bg-card object-contain p-1 shadow-[var(--shadow-warm)] md:h-32 md:w-32" />
           <h1 className="text-3xl font-bold leading-tight md:text-5xl">
-            Comece seu delivery de pizza em casa e tenha uma renda extra de{" "}
+            Comece seu delivery de pizza em casa e tenha uma renda extra que pode chegar de{" "}
             <span className="rounded-lg bg-sun px-2 text-espresso">5 a 10 mil reais</span> por mês
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">
