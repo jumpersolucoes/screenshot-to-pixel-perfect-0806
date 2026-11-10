@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/logo.png.asset.json";
 import hero from "@/assets/pizza-hero.jpg";
 import phoneAd from "@/assets/phone-ad.jpg";
+import video from "@/assets/apresentacao.mp4.asset.json";
+import poster from "@/assets/apresentacao-capa.jpg.asset.json";
 import { offer } from "@/config/offer";
 
 export const Route = createFileRoute("/")({
@@ -58,6 +60,16 @@ function Index() {
           </p>
         </div>
         <img src={hero} alt="Pizza artesanal sendo colocada na caixa de entrega numa cozinha de casa" width={1280} height={1024} className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]" />
+      </section>
+
+      {/* Vídeo */}
+      <section className="bg-espresso px-5 py-16">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-bold text-sun md:text-4xl">Assista e entenda como funciona</h2>
+          <video controls playsInline preload="metadata" poster={poster.url} width={848} height={478} className="mt-8 w-full rounded-3xl border-4 border-gold shadow-[var(--shadow-warm)]">
+            <source src={video.url} type="video/mp4" />
+          </video>
+        </div>
       </section>
 
       {/* 2. Mercado */}
