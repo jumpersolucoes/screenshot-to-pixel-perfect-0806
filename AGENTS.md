@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Offer price and checkout URL live in src/config/offer.ts; empty values hide the price and disable enrollment so unconfirmed offers never show.
