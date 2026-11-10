@@ -1,9 +1,10 @@
 import { render, screen } from "@testing-library/react";
+import type { ReactElement } from "react";
 import { describe, expect, it } from "vitest";
 
 import { Route } from "@/routes/index";
 
-const Page = Route.options.component as unknown as () => React.ReactElement;
+const Page = Route.options.component as unknown as () => ReactElement;
 
 // Values the user confirmed for the offer: reference price, promotional price, label.
 describe("Oferta na landing page", () => {
