@@ -54,9 +54,6 @@ function Index() {
             Aprenda do zero a preparar pizzas, montar seu cardápio, calcular seus preços e divulgar seu delivery para atrair os primeiros pedidos no seu bairro.
           </p>
           <a href={hasCheckout ? offer.checkoutUrl : "#grade"} className="btn-cta mt-8 w-full sm:w-auto">Quero começar meu delivery</a>
-          <p className="mt-4 text-sm text-muted-foreground">
-            Faixa ilustrativa de faturamento bruto mensal, sem garantia de resultado. O lucro depende dos custos da operação, das taxas e do volume de vendas.
-          </p>
         </div>
         <img src={hero} alt="Pizza artesanal sendo colocada na caixa de entrega numa cozinha de casa" width={1280} height={1024} className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]" />
       </section>
