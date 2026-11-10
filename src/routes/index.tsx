@@ -55,15 +55,6 @@ function Index() {
             Aprenda do zero a preparar pizzas, montar seu cardápio, calcular seus preços e divulgar seu delivery para atrair os primeiros pedidos no seu bairro.
           </p>
           <a href={hasCheckout ? offer.checkoutUrl : "#grade"} className="btn-cta mt-8 w-full sm:w-auto">Quero começar meu delivery</a>
-          {offer.price && (
-            <div className="mt-6 rounded-3xl bg-sun px-5 py-4 shadow-[var(--shadow-warm)]">
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
-                {offer.originalPrice && <p className="font-display text-2xl font-bold text-espresso/60 line-through">{offer.originalPrice}</p>}
-                <p className="font-display text-4xl font-bold leading-none text-espresso sm:text-5xl md:text-6xl">{offer.price}</p>
-              </div>
-              <span className="mt-2 inline-block rounded-full bg-tomato px-4 py-1 text-sm font-bold uppercase tracking-wide text-cream">{offer.offerLabel}</span>
-            </div>
-          )}
         </div>
         <img src={hero} alt="Pizza artesanal sendo colocada na caixa de entrega numa cozinha de casa" width={1280} height={1024} className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]" />
       </section>
