@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/logo.png.asset.json";
 import hero from "@/assets/pizza-hero.jpg";
-import phoneAd from "@/assets/phone-ad.jpg";
+import phoneAdAsset from "@/assets/diferencial.png.asset.json";
+const phoneAd = phoneAdAsset.url;
 import video from "@/assets/apresentacao.mp4.asset.json";
 import poster from "@/assets/apresentacao-capa.jpg.asset.json";
 import { offer } from "@/config/offer";
