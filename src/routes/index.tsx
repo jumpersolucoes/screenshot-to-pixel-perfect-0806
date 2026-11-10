@@ -6,6 +6,7 @@ const phoneAd = phoneAdAsset.url;
 import video from "@/assets/apresentacao.mp4.asset.json";
 import poster from "@/assets/apresentacao-capa.jpg.asset.json";
 import { offer } from "@/config/offer";
+import { FaqSection } from "@/components/faq-section";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -148,6 +149,8 @@ function Index() {
         </div>
       </section>
 
+      <FaqSection />
+
       {/* 5. Matrícula */}
       <section className="bg-espresso px-5 py-20 text-center text-cream">
         <div className="mx-auto max-w-2xl">
@@ -178,6 +181,7 @@ function Index() {
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
             Entre no curso, assista às aulas e teste as receitas. Se em até 7 dias você achar que o Método Pizza e Renda não é para você, é só pedir o reembolso que devolvemos 100% do valor pago, sem perguntas e sem burocracia.
           </p>
+           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">Não garantimos retornos financeiros por depender de diversos fatores.</p>
         </div>
       </section>
 

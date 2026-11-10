@@ -171,6 +171,20 @@
   h1, h2, h3 { font-family: var(--font-display); }
   html { scroll-behavior: smooth; }
 }
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+@utility animate-accordion-down { animation: accordion-down .2s ease-out; }
+@utility animate-accordion-up { animation: accordion-up .2s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  [data-state] { animation: none !important; }
+}
 @utility btn-cta {
   display: inline-flex; align-items: center; justify-content: center; min-height: 3.5rem;
   padding: 0.9rem 1.75rem; border-radius: 999px; font-family: var(--font-display); font-weight: 700;
