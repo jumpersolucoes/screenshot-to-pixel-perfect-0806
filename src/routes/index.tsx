@@ -140,7 +140,7 @@ function Index() {
           )}
         </div>
       </section>
-      <footer className="px-5 py-8 text-center text-sm text-muted-foreground"><p>© Método Pizza e Renda</p><p className="mt-2 text-xs">Não garantimos o resultado, por depender de múltiplos fatores.</p></footer>
+      <footer className="px-5 py-8 text-center text-sm text-muted-foreground"><p>© Método Pizza e Renda</p><p className="mt-2">Contato: <a className="font-semibold underline" href="mailto:pizzaerenda@gmail.com">pizzaerenda@gmail.com</a></p><p className="mt-2 text-xs">Não garantimos o resultado, por depender de múltiplos fatores.</p></footer>
     </main>
   );
 }
