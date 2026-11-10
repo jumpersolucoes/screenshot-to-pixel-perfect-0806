@@ -56,10 +56,12 @@ function Index() {
           </p>
           <a href={hasCheckout ? offer.checkoutUrl : "#grade"} className="btn-cta mt-8 w-full sm:w-auto">Quero começar meu delivery</a>
           {offer.price && (
-            <div className="mt-6">
-              {offer.originalPrice && <p className="font-display text-xl font-bold text-muted-foreground line-through">{offer.originalPrice}</p>}
-              <p className="font-display text-5xl font-bold leading-none text-espresso md:text-6xl">{offer.price}</p>
-              <span className="mt-3 inline-block rounded-full bg-tomato px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-cream">{offer.offerLabel}</span>
+            <div className="mt-6 rounded-3xl bg-sun px-5 py-4 shadow-[var(--shadow-warm)]">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                {offer.originalPrice && <p className="font-display text-2xl font-bold text-espresso/60 line-through">{offer.originalPrice}</p>}
+                <p className="font-display text-4xl font-bold leading-none text-espresso sm:text-5xl md:text-6xl">{offer.price}</p>
+              </div>
+              <span className="mt-2 inline-block rounded-full bg-tomato px-4 py-1 text-sm font-bold uppercase tracking-wide text-cream">{offer.offerLabel}</span>
             </div>
           )}
         </div>
