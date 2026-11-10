@@ -55,6 +55,13 @@ function Index() {
             Aprenda do zero a preparar pizzas, montar seu cardápio, calcular seus preços e divulgar seu delivery para atrair os primeiros pedidos no seu bairro.
           </p>
           <a href={hasCheckout ? offer.checkoutUrl : "#grade"} className="btn-cta mt-8 w-full sm:w-auto">Quero começar meu delivery</a>
+          {offer.price && (
+            <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm font-semibold text-muted-foreground">
+              {offer.originalPrice && <span className="line-through">{offer.originalPrice}</span>}
+              <span className="font-display text-2xl font-bold text-espresso">{offer.price}</span>
+              <span className="rounded-full bg-tomato px-3 py-1 text-xs font-bold uppercase tracking-wide text-cream">{offer.offerLabel}</span>
+            </p>
+          )}
         </div>
         <img src={hero} alt="Pizza artesanal sendo colocada na caixa de entrega numa cozinha de casa" width={1280} height={1024} className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]" />
       </section>
@@ -132,7 +139,13 @@ function Index() {
         <div className="mx-auto max-w-2xl">
           <h2 className="text-3xl font-bold text-sun md:text-5xl">Seu primeiro delivery pode começar na sua cozinha</h2>
           <p className="mt-5 text-lg opacity-90">Aprenda a produzir, precificar, divulgar e vender suas pizzas com um passo a passo pensado para quem está começando.</p>
-          {offer.price && <p className="mt-6 font-display text-3xl font-bold text-sun">{offer.price}</p>}
+          {offer.price && (
+            <div className="mt-8 rounded-3xl border-4 border-gold bg-card p-7 shadow-[var(--shadow-warm)]">
+              <span className="inline-block rounded-full bg-tomato px-4 py-1 text-sm font-bold uppercase tracking-wide text-cream">{offer.offerLabel}</span>
+              {offer.originalPrice && <p className="mt-4 text-xl font-semibold text-muted-foreground line-through">{offer.originalPrice}</p>}
+              <p className="mt-1 font-display text-5xl font-bold text-espresso md:text-6xl">{offer.price}</p>
+            </div>
+          )}
           {hasCheckout ? (
             <a href={offer.checkoutUrl} className="btn-cta mt-8 w-full sm:w-auto">Quero entrar no Método Pizza e Renda</a>
           ) : (
