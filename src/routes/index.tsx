@@ -86,6 +86,23 @@ function Index() {
               <a className="mt-4 inline-block text-sm font-semibold underline" target="_blank" rel="noopener noreferrer" href="https://www.cnnbrasil.com.br/economia/money/negocios/dia-da-pizza-ifood-tem-50-milhoes-de-pedidos-no-1o-semestre/">Fonte: levantamento do iFood divulgado pela CNN Brasil</a>
             </div>
           </div>
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border-t-8 border-tomato bg-card p-7 shadow-[var(--shadow-warm)]">
+              <p className="font-display text-5xl font-bold text-tomato">62%</p>
+              <p className="mt-3 text-lg">dos brasileiros preferem pedir pizza entre sexta e domingo no iFood, e o <strong>sábado</strong> é o dia com mais compras. Dá para começar só nas noites de fim de semana, sem largar o emprego.</p>
+              <p className="mt-4 text-sm font-semibold">Fonte: InfoMoney</p>
+            </div>
+            <div className="rounded-3xl border-t-8 border-gold bg-card p-7 shadow-[var(--shadow-warm)]">
+              <p className="font-display text-5xl font-bold text-gold">95%</p>
+              <p className="mt-3 text-lg">dos pedidos de pizza no iFood acontecem no <strong>jantar</strong>, considerando todos os dias da semana.</p>
+              <p className="mt-4 text-sm font-semibold">Fonte: Mercado & Consumo</p>
+            </div>
+            <div className="rounded-3xl border-t-8 border-tomato bg-card p-7 shadow-[var(--shadow-warm)]">
+              <p className="font-display text-5xl font-bold text-tomato">Bairro</p>
+              <p className="mt-3 text-lg">As <strong>pizzarias de bairro</strong> são as preferidas dos brasileiros. Vender para quem mora perto é exatamente o que o método ensina.</p>
+              <p className="mt-4 text-sm font-semibold">Fonte: pesquisa do Instituto Foodservice Brasil</p>
+            </div>
+          </div>
           <p className="mt-8 text-lg font-semibold">O Método Pizza e Renda ensina como começar em pequena escala e apresentar seu cardápio a quem pode comprar de você no seu bairro.</p>
         </div>
       </section>
