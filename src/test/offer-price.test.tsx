@@ -16,8 +16,7 @@ describe("Oferta na landing page", () => {
   it("mostra o preço de referência de R$ 999,99 riscado", () => {
     render(<Page />);
     const reference = screen.getAllByText("R$ 999,99")[0];
-    expect(reference).toBeInTheDocument();
-    expect(reference.className).toContain("line-through");
+    expect(reference?.className).toContain("line-through");
   });
 
   it("mostra o aviso de oferta por tempo limitado", () => {
