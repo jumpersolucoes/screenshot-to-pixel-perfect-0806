@@ -5,6 +5,7 @@ import phoneAdAsset from "@/assets/diferencial.png.asset.json";
 const phoneAd = phoneAdAsset.url;
 import video from "@/assets/apresentacao.mp4.asset.json";
 import poster from "@/assets/apresentacao-capa.jpg.asset.json";
+import jumperLogo from "@/assets/jumper-solucoes.png.asset.json";
 import { offer } from "@/config/offer";
 import { FaqSection } from "@/components/faq-section";
 
@@ -186,7 +187,15 @@ function Index() {
         </div>
       </section>
 
-      <footer className="px-5 py-8 text-center text-sm text-muted-foreground"><p>© Método Pizza e Renda</p><p className="mt-2">Contato: <a className="font-semibold underline" href="mailto:pizzaerenda@gmail.com">pizzaerenda@gmail.com</a></p><p className="mt-2 text-xs">Não garantimos o resultado, por depender de múltiplos fatores.</p></footer>
+      <footer className="px-5 py-10 text-center text-sm text-muted-foreground">
+        <div className="mx-auto flex max-w-xs flex-col items-center gap-3">
+          <img src={jumperLogo.url} alt="Jumper Soluções" width={72} height={72} loading="lazy" className="h-16 w-16 rounded-2xl shadow-[var(--shadow-warm)]" />
+          <p className="font-display text-base font-bold text-espresso">Um curso desenvolvido pela Jumper Soluções</p>
+        </div>
+        <p className="mt-6">© Método Pizza e Renda</p>
+        <p className="mt-2">Contato: <a className="font-semibold underline" href="mailto:pizzaerenda@gmail.com">pizzaerenda@gmail.com</a></p>
+        <p className="mt-2 text-xs">Não garantimos o resultado, por depender de múltiplos fatores.</p>
+      </footer>
     </main>
   );
 }
