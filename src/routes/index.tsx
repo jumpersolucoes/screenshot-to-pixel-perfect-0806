@@ -63,7 +63,10 @@ function Index() {
           </p>
           <a href={hasCheckout ? offer.checkoutUrl : "#grade"} className="btn-cta mt-8 w-full sm:w-auto">Quero começar meu delivery</a>
         </div>
-        <img src={hero} alt="Pizza artesanal sendo colocada na caixa de entrega numa cozinha de casa" width={1280} height={1024} className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]" />
+        <div className="relative">
+          <img src={hero} alt="Pizza artesanal sendo colocada na caixa de entrega numa cozinha de casa" width={1280} height={1024} className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]" />
+          <span className="pointer-events-none absolute bottom-3 right-4 text-[10px] font-medium tracking-wide text-cream/35">Imagens ilustrativas</span>
+        </div>
       </section>
 
       {/* Vídeo */}
@@ -131,7 +134,10 @@ function Index() {
               ))}
             </ol>
           </div>
-          <img src={phoneAd} alt="Ilustração de anúncio de pizza no celular" width={1024} height={1024} loading="lazy" className="w-full rounded-3xl" />
+          <div className="relative">
+            <img src={phoneAd} alt="Ilustração de anúncio de pizza no celular" width={1024} height={1024} loading="lazy" className="w-full rounded-3xl" />
+            <span className="pointer-events-none absolute bottom-3 right-4 text-[10px] font-medium tracking-wide text-cream/35">Imagens ilustrativas</span>
+          </div>
         </div>
       </section>
 
