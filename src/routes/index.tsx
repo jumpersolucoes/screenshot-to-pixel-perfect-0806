@@ -32,6 +32,7 @@ const modules = [
   ["Montar um cardápio com 18 sabores", "Aprenda a preparar 18 sabores e a organizar o cardápio do seu delivery."],
   ["Ficha técnica", "Registre ingredientes, quantidades, rendimento e custo por receita."],
   ["Planilha de precificação", "Calcule o preço de venda considerando ingredientes, embalagem, taxas e margem desejada."],
+  ["Acompanhamento pelo WhatsApp", "Tire suas dúvidas com um pizzaiolo e um gestor de tráfego profissional pelo WhatsApp."],
   ["Tráfego pago", "Aprenda a criar anúncios no Instagram e no Facebook para atrair clientes da sua região para o seu delivery."],
 ];
 
