@@ -23,17 +23,17 @@ export const Route = createFileRoute("/")({
 });
 
 const modules = [
-  ["Criar sua loja no iFood e na 99Food", "Entenda o cadastro, organize o perfil da loja e prepare o cardápio para publicar conforme a disponibilidade das plataformas na sua região."],
   ["Utensílios", "Identifique o que é essencial para começar e o que pode ficar para depois."],
+  ["Primeira compra", "Monte sua lista inicial de ingredientes e embalagens de acordo com o volume que pretende produzir."],
   ["Preparar a massa", "Aprenda a misturar, sovar, fermentar, porcionar e abrir a massa."],
   ["Processar insumos", "Organize o preparo e o porcionamento de molhos, queijos e recheios."],
-  ["Primeira compra", "Monte sua lista inicial de ingredientes e embalagens de acordo com o volume que pretende produzir."],
   ["Rechear e assar", "Aprenda a distribuir os ingredientes, controlar o ponto da massa e finalizar a pizza para entrega."],
   ["Montar um cardápio com 18 sabores", "Aprenda a preparar 18 sabores e a organizar o cardápio do seu delivery."],
-  ["Ficha técnica", "Registre ingredientes, quantidades, rendimento e custo por receita."],
   ["Planilha de precificação", "Calcule o preço de venda considerando ingredientes, embalagem, taxas e margem desejada."],
-  ["Acompanhamento pelo WhatsApp", "Tire suas dúvidas com um pizzaiolo e um gestor de tráfego profissional pelo WhatsApp."],
+  ["Ficha técnica", "Registre ingredientes, quantidades, rendimento e custo por receita."],
+  ["Criar sua loja no iFood e na 99Food", "Entenda o cadastro, organize o perfil da loja e prepare o cardápio para publicar conforme a disponibilidade das plataformas na sua região."],
   ["Tráfego pago", "Aprenda a criar anúncios no Instagram e no Facebook para atrair clientes da sua região para o seu delivery."],
+  ["Acompanhamento pelo WhatsApp", "Tire suas dúvidas com um pizzaiolo e um gestor de tráfego profissional pelo WhatsApp."],
 ];
 
 const steps = [
