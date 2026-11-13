@@ -5,7 +5,7 @@ import phoneAdAsset from "@/assets/diferencial.png.asset.json";
 const phoneAd = phoneAdAsset.url;
 import video from "@/assets/apresentacao.mp4.asset.json";
 import poster from "@/assets/apresentacao-capa.jpg.asset.json";
-import jumperLogo from "@/assets/jumper-solucoes.png.asset.json";
+import jumperLogo from "@/assets/jumper-novo.png.asset.json";
 import { offer } from "@/config/offer";
 import { FaqSection } from "@/components/faq-section";
 
@@ -195,7 +195,7 @@ function Index() {
 
       <footer className="px-5 py-10 text-center text-sm text-muted-foreground">
         <div className="mx-auto flex max-w-xs flex-col items-center gap-3">
-          <img src={jumperLogo.url} alt="Jumper Soluções" width={72} height={72} loading="lazy" className="h-16 w-16 rounded-2xl shadow-[var(--shadow-warm)]" />
+          <img src={jumperLogo.url} alt="Jumper Solutions" width={66} height={80} loading="lazy" className="h-20 w-auto" />
           <p className="font-display text-base font-bold text-espresso">Um curso desenvolvido pela Jumper Soluções</p>
         </div>
         <p className="mt-6">© Método Pizza e Renda</p>
