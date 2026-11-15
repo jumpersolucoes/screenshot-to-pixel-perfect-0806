@@ -195,7 +195,7 @@ function Index() {
 
       <footer className="px-5 py-10 text-center text-sm text-muted-foreground">
         <div className="mx-auto flex max-w-xs flex-col items-center gap-3">
-          <img src={jumperLogo.url} alt="Jumper Solutions" width={66} height={80} loading="lazy" className="h-20 w-auto" />
+          <img src={jumperLogo.url} alt="Jumper Solutions" width={94} height={112} loading="lazy" className="h-28 w-auto" />
           <p className="font-display text-base font-bold text-espresso">Um curso desenvolvido pela Jumper Soluções</p>
         </div>
         <p className="mt-6">© Método Pizza e Renda</p>
