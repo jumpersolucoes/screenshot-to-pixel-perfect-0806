@@ -3,3 +3,4 @@
 - [x] Add the financial-results disclaimer in the seven-day guarantee.
 - [ ] Swap the footer logo for the new Jumper Solutions mark.
 - [ ] Blur the video background so the logo behind the presenter is hidden.
+- [ ] Swap the page video for the newly uploaded one.
