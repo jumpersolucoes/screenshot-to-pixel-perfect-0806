@@ -1,3 +1,4 @@
+import { useRef, useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/logo.png.asset.json";
 import heroVideo from "@/assets/video-hero.mp4.asset.json";
@@ -46,6 +47,20 @@ const steps = [
 
 function Index() {
   const hasCheckout = Boolean(offer.checkoutUrl);
+  const heroRef = useRef<HTMLVideoElement>(null);
+  const [somLigado, setSomLigado] = useState(false);
+
+  const alternarSom = () => {
+    const v = heroRef.current;
+    if (!v) return;
+    v.muted = !v.muted;
+    if (!v.muted) {
+      v.volume = 1;
+      void v.play().catch(() => {});
+    }
+    setSomLigado(!v.muted);
+  };
+
   return (
     <main className="overflow-x-hidden">
       {/* 1. Hero */}
@@ -65,10 +80,24 @@ function Index() {
           <a href={hasCheckout ? offer.checkoutUrl : "#grade"} className="btn-cta mt-8 w-full sm:w-auto">Quero começar meu delivery</a>
         </div>
         <div className="relative">
-          <video autoPlay muted loop playsInline controls preload="metadata" poster={heroPoster.url} width={1280} height={720} aria-label="Pizza artesanal sendo preparada numa cozinha de casa" className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]">
+          <video ref={heroRef} autoPlay muted loop playsInline controls preload="metadata" poster={heroPoster.url} width={1280} height={720} aria-label="Pizza artesanal sendo preparada numa cozinha de casa" className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]">
             <source src={heroVideo.url} type="video/mp4" />
           </video>
           <span className="pointer-events-none absolute bottom-3 right-4 text-[10px] font-medium tracking-wide text-cream/35">Imagens ilustrativas</span>
+          <button type="button" onClick={alternarSom} aria-pressed={somLigado} className="mt-3 inline-flex items-center gap-2 rounded-full border-2 border-gold bg-card px-4 py-2 text-sm font-bold text-espresso transition hover:bg-sun/20">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M11 5 6 9H3v6h3l5 4V5z" />
+              {somLigado ? (
+                <>
+                  <path d="M15.5 8.5a5 5 0 0 1 0 7" />
+                  <path d="M18.5 5.5a9 9 0 0 1 0 13" />
+                </>
+              ) : (
+                <path d="M22 9l-6 6M16 9l6 6" />
+              )}
+            </svg>
+            {somLigado ? "Som ligado — tocar para silenciar" : "Ativar som do vídeo"}
+          </button>
         </div>
       </section>
 
