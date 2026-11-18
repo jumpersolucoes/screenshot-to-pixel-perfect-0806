@@ -5,3 +5,4 @@
 - [ ] Blur the video background so the logo behind the presenter is hidden.
 - [x] Swap the page video for the newly uploaded one.
 - [x] Replace the hero pizza photo with the new pizza-making video.
+- [x] Swap the hero pizza video for the newly uploaded one.
