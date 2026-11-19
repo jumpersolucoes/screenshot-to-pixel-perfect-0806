@@ -3,6 +3,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import logo from "@/assets/logo.png.asset.json";
 import heroVideo from "@/assets/video-hero.mp4.asset.json";
 import heroPoster from "@/assets/video-hero-capa.jpg.asset.json";
+import chamadaVideo from "@/assets/chamada-topo.mp4.asset.json";
+import chamadaPoster from "@/assets/chamada-topo-capa.jpg.asset.json";
 import phoneAdAsset from "@/assets/diferencial.png.asset.json";
 const phoneAd = phoneAdAsset.url;
 import video from "@/assets/apresentacao.mp4.asset.json";
@@ -79,11 +81,16 @@ function Index() {
           </p>
           <a href={hasCheckout ? offer.checkoutUrl : "#grade"} className="btn-cta mt-8 w-full sm:w-auto">Quero começar meu delivery</a>
         </div>
-        <div className="relative">
-          <video ref={heroRef} autoPlay muted loop playsInline controls preload="metadata" poster={heroPoster.url} width={1280} height={720} aria-label="Pizza artesanal sendo preparada numa cozinha de casa" className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]">
-            <source src={heroVideo.url} type="video/mp4" />
+        <div>
+          <video controls playsInline preload="metadata" poster={chamadaPoster.url} width={1280} height={720} aria-label="Apresentação do Método Pizza e Renda" className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]">
+            <source src={chamadaVideo.url} type="video/mp4" />
           </video>
-          <span className="pointer-events-none absolute bottom-3 right-4 text-[10px] font-medium tracking-wide text-cream/35">Imagens ilustrativas</span>
+          <div className="relative mt-5">
+            <video ref={heroRef} autoPlay muted loop playsInline controls preload="metadata" poster={heroPoster.url} width={1280} height={720} aria-label="Pizza artesanal sendo preparada numa cozinha de casa" className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]">
+              <source src={heroVideo.url} type="video/mp4" />
+            </video>
+            <span className="pointer-events-none absolute bottom-3 right-4 text-[10px] font-medium tracking-wide text-cream/35">Imagens ilustrativas</span>
+          </div>
           <button type="button" onClick={alternarSom} aria-pressed={somLigado} className="mt-3 inline-flex items-center gap-2 rounded-full border-2 border-gold bg-card px-4 py-2 text-sm font-bold text-espresso transition hover:bg-sun/20">
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M11 5 6 9H3v6h3l5 4V5z" />
