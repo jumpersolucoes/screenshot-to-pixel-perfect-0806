@@ -7,4 +7,4 @@
 - [x] Replace the hero pizza photo with the new pizza-making video.
 - [x] Swap the hero pizza video for the newly uploaded one.
 - [x] Place the new presenter video above the pizza video at the top.
-- [ ] Leave only one pizza video on the page and put the newly sent video in the other slot.
+- [x] Leave only one pizza video on the page and put the newly sent video in the other slot.

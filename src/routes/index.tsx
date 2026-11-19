@@ -7,8 +7,6 @@ import chamadaVideo from "@/assets/chamada-topo.mp4.asset.json";
 import chamadaPoster from "@/assets/chamada-topo-capa.jpg.asset.json";
 import phoneAdAsset from "@/assets/diferencial.png.asset.json";
 const phoneAd = phoneAdAsset.url;
-import video from "@/assets/apresentacao.mp4.asset.json";
-import poster from "@/assets/apresentacao-capa.jpg.asset.json";
 import jumperLogo from "@/assets/jumper-novo.png.asset.json";
 import { offer } from "@/config/offer";
 import { FaqSection } from "@/components/faq-section";
@@ -105,16 +103,6 @@ function Index() {
             </svg>
             {somLigado ? "Som ligado — tocar para silenciar" : "Ativar som do vídeo"}
           </button>
-        </div>
-      </section>
-
-      {/* Vídeo */}
-      <section className="bg-espresso px-5 py-16">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-sun md:text-4xl">Assista e entenda como funciona</h2>
-          <video controls playsInline preload="metadata" poster={poster.url} width={848} height={478} className="mt-8 w-full rounded-3xl border-4 border-gold shadow-[var(--shadow-warm)]">
-            <source src={video.url} type="video/mp4" />
-          </video>
         </div>
       </section>
 
