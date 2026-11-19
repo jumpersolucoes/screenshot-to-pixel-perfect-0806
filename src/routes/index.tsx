@@ -5,6 +5,8 @@ import heroVideo from "@/assets/video-hero.mp4.asset.json";
 import heroPoster from "@/assets/video-hero-capa.jpg.asset.json";
 import chamadaVideo from "@/assets/chamada-topo.mp4.asset.json";
 import chamadaPoster from "@/assets/chamada-topo-capa.jpg.asset.json";
+import meioVideo from "@/assets/chamada-anterior.mp4.asset.json";
+import meioPoster from "@/assets/chamada-anterior-capa.jpg.asset.json";
 import phoneAdAsset from "@/assets/diferencial.png.asset.json";
 const phoneAd = phoneAdAsset.url;
 import jumperLogo from "@/assets/jumper-novo.png.asset.json";
@@ -165,6 +167,15 @@ function Index() {
             <img src={phoneAd} alt="Ilustração de anúncio de pizza no celular" width={1024} height={1024} loading="lazy" className="w-full rounded-3xl" />
             <span className="pointer-events-none absolute bottom-3 right-4 text-[10px] font-medium tracking-wide text-cream/35">Imagens ilustrativas</span>
           </div>
+        </div>
+      </section>
+
+      {/* Vídeo do meio */}
+      <section className="px-5 pt-20">
+        <div className="mx-auto max-w-3xl">
+          <video controls playsInline preload="metadata" poster={meioPoster.url} width={1280} height={720} aria-label="Vídeo do Método Pizza e Renda" className="w-full rounded-3xl border-4 border-gold object-cover shadow-[var(--shadow-warm)]">
+            <source src={meioVideo.url} type="video/mp4" />
+          </video>
         </div>
       </section>
 
