@@ -8,3 +8,4 @@
 - [x] Swap the hero pizza video for the newly uploaded one.
 - [x] Place the new presenter video above the pizza video at the top.
 - [x] Leave only one pizza video on the page and put the newly sent video in the other slot.
+- [x] Put the 1:50 presentation video back as the third video, in the middle of the page.
