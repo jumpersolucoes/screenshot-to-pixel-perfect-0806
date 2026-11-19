@@ -9,3 +9,4 @@
 - [x] Place the new presenter video above the pizza video at the top.
 - [x] Leave only one pizza video on the page and put the newly sent video in the other slot.
 - [x] Put the 1:50 presentation video back as the third video, in the middle of the page.
+- [x] Wire the Kiwify checkout link (https://pay.kiwify.com.br/Fjaph5N) into the enrollment buttons.
